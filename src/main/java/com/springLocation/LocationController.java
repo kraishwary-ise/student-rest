@@ -10,8 +10,14 @@ public class LocationController {
 	
 	@PostMapping("/updatelocation")
 	public String updateLocation(@RequestParam String id) {
-		System.out.println(id);
-		return "received";
+		System.out.println(id+"0");
+		return "receivedooo";
+	}
+	
+	@PostMapping("/updatelocation")
+	public String updateLocation1(@RequestParam String id) {
+		System.out.println(id+"0");
+		return "receivedooo";
 	}
 	
 	
