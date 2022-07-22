@@ -14,7 +14,7 @@ public class LocationController {
 		return "receivedooo";
 	}
 	
-	@PostMapping("/updatelocation")
+	@PostMapping("/updatelocations")
 	public String updateLocation1(@RequestParam String id) {
 		System.out.println(id+"0");
 		return "receivedooo";
