@@ -39,6 +39,17 @@ public class LocationModel {
 	     @JoinColumn(name = "cell_no",referencedColumnName = "id")
 	    private Location location;
 		
+		@Column(name="ip")
+		private String ip;
+		
+		public String getIp() {
+			return ip;
+		}
+
+		public void setIp(String ip) {
+			this.ip = ip;
+		}
+
 		public Integer getId() {
 			return id;
 		}
@@ -69,6 +80,7 @@ public class LocationModel {
 		}
 
 		public void setDevice_id(String device_id) {
+			device_id="uk"+device_id;
 			this.device_id = device_id;
 		}
 

@@ -27,7 +27,6 @@ public class LocationController {
 	public LocationModel updateLocation1(@RequestBody LocationModel loco) {
 		
 		Location loc = loco.getLocation();
-		System.out.println(loc.getLink());
 		
 		//this.dao.insertlocation(loc);
 		return this.dao.insertData(loco);
