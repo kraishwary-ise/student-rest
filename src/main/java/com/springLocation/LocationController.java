@@ -29,7 +29,7 @@ public class LocationController {
 		Location loc = loco.getLocation();
 		System.out.println(loc.getLink());
 		this.dao.insertData(loco);
-		this.dao.insertlocation(loc);
+		//this.dao.insertlocation(loc);
 		return "receivedooo";
 	}
 	
