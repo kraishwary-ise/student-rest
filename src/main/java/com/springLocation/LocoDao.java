@@ -12,9 +12,9 @@ public class LocoDao {
 	private LocationRepository locorepo2;
 	
 	
-	public void insertData(LocationModel loco) {
+	public LocationModel insertData(LocationModel loco) {
 		
-		this.locorepo.save(loco);
+		return this.locorepo.save(loco);
 		
 		
 	}

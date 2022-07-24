@@ -24,13 +24,13 @@ public class LocationController {
 	}
 	
 	@PostMapping("/updatelocations")
-	public String updateLocation1(@RequestBody LocationModel loco) {
+	public LocationModel updateLocation1(@RequestBody LocationModel loco) {
 		
 		Location loc = loco.getLocation();
 		System.out.println(loc.getLink());
-		this.dao.insertData(loco);
+		
 		//this.dao.insertlocation(loc);
-		return "receivedooo";
+		return this.dao.insertData(loco);
 	}
 	
 	
