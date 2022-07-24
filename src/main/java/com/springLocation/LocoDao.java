@@ -8,11 +8,21 @@ public class LocoDao {
 	@Autowired
 	private Locorepository locorepo;
 	
+	@Autowired
+	private LocationRepository locorepo2;
+	
 	
 	public void insertData(LocationModel loco) {
 		
 		this.locorepo.save(loco);
 		
+		
+	}
+
+
+	public void insertlocation(Location loc) {
+		// TODO Auto-generated method stub
+		this.locorepo2.save(loc);
 		
 	}
 }
